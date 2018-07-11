@@ -12,13 +12,13 @@ app = Flask(__name__)
 #app = Flask(__name__, instance_relative_config=True)
 #app.config.from_pyfile('.env', silent=True)
 
-@app.before_request
-def before_request():
-  #if request.url.startswith('http://'):
-  if not request.is_secure:
-    url = request.url.replace('http://', 'https://', 1)
-    code = 301
-    return redirect(url, code=code)
+# @app.before_request
+# def before_request():
+#   #if request.url.startswith('http://'):
+#   if not request.is_secure:
+#     url = request.url.replace('http://', 'https://', 1)
+#     code = 301
+#     return redirect(url, code=code)
 
 @app.route('/')
 def home():
