@@ -1,0 +1,373 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, html{
+  width:100%;
+  height:100%;
+  padding:0;
+  margin:0;
+  background-color:#fff;
+  color:#504a61;
+  font-family:"Crimson Text", sans-serif;
+}
+
+.header{
+  width:100%;
+  height:calc(2em + 32px);
+  position:fixed;
+  top:0;
+  left:0;
+  padding:16px;
+  background-color:#fff;
+  background-color:transparent;
+}
+.scene{
+  width:100%;
+  min-height:100%;
+  /*margin-top:calc(2em + 32px);*/
+  padding:16px;
+  padding-top:calc(2em + 32px);
+  position:relative;
+  overflow-y:hidden;
+}
+#scene1{
+  /*background-color:#86d1fe;*/
+  background-color:#c1e8ff;
+  background-image: url('../images/flowers.png');
+  background-position: top left;
+  /*background-repeat:repeat-x;*/
+  background-size:40% auto;
+
+}
+
+
+
+.garland{
+  position:absolute; 
+  width:80%;
+  height:auto;
+  top:0;
+  left:10%;
+  z-index:1;
+}
+.waveForm{
+  width:100%;
+  height:30%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  background-image:url('../images/waveform.png');
+  background-position:top left;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+
+img.leftImg{
+  position:absolute;
+  /*left:calc(10% + 8px);*/
+  left:8px;
+  bottom:10%;
+  max-width:50%;
+  height:60%;
+  z-index:15;
+}
+img.rightImg{
+  position:absolute;
+  /*right:calc(10% + 8px);*/
+  right:8px;
+  bottom:10%;
+  max-width:50%;
+  height:60%;
+  z-index:15;
+}
+img.topleftImg{
+  position:absolute;
+  /*left:calc(10% + 8px);*/
+  left:8px;
+  top:0px;
+  max-width:50%;
+  height:60%;
+  z-index:15;  
+}
+.footer{
+  width:100%;
+  background-color:#444444;
+  color:white;
+  overflow-y: hidden;
+  padding-top:32px;
+  padding-bottom:32px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+}
+h1, h2, h3{
+  font-family: 'Fredericka the Great', cursive;
+  font-weight:400;
+  text-align:center;
+}
+h1.cultureKits{
+  font-weight:700;
+}
+
+#scene1 .slideContent{
+  text-align:center;
+  margin-top:100px;
+  margin-left:auto;
+  margin-right:auto;
+  font-size:3em;
+  line-height:0.8em;
+}
+
+
+#scene2{
+  background-color:#86d1fe;
+  background-image: url('../images/clouds.png');
+  background-position: top left;
+  /*background-repeat:repeat-x;*/
+  background-size:40% auto;
+  text-align:center;
+}
+h1.titleHeader {
+  font-size:4em;
+}
+.personBox {
+  padding:16px;
+  width:50%;
+  float:left;
+  text-align:center;
+  overflow-y: hidden;
+  cursor:pointer;
+}
+.personBox img {
+  height:20vh;
+  width:20vh;
+
+  float:none;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:10vh;
+}
+.personBox div.descr{
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+}
+.personBox div.descr span{
+  display:block;
+  clear:both;
+}
+
+.personBox p {
+  font-size:10pt;
+  padding-left:16px;
+  padding-top:0;
+  height:100%;
+  width:calc(100% - 20vh);
+  text-align:left;
+  float:left;
+  margin-top:0px;
+  display:none;
+}
+
+.mainSceneContent{
+  margin-left:auto;
+  margin-right:auto;
+  width:60%;
+  height:50%;
+  background-color:transparent;
+}
+
+.peoplOverlay{
+  height:100vh;
+  width:100vw;
+  background-color:rgba(40,40,40,0.7);
+  text-align:center;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:10;
+  display:none;
+  
+}
+
+.peopleWrite{
+  width:70%;
+  min-height:300px;
+  height:60%;
+  min-height:300px;
+
+  background-color:white;
+  margin-left:auto;
+  margin-right:auto;
+
+  margin-top:10%;
+}
+.pImgBox{
+  float:left;
+  width:40%;
+  background-color:rgb(40,40,40);
+  text-align:center;
+  height:100%;
+}
+.pImgBox img{
+  height:30vh;
+  width:30vh;
+
+  border-radius:15vh;
+
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:30%;
+}
+.pImgBox div.descr span{
+  display:block;
+  clear:both;
+  color:white;
+}
+
+.writeupBox{
+  width:60%;
+  float:left;
+
+  padding:16px;
+  text-align:left;
+  height:100%;
+}
+
+#scene3{
+  background-color:#86fe96;
+  background-image: url('../images/flowers.png');
+  background-position: top left;
+  /*background-repeat:repeat-x;*/
+  background-size:40% auto;
+  text-align:center;
+}
+
+.storyWrite{
+  width:70%;
+  min-width:300px;
+  height:400px;
+
+  background-color:white;
+  margin-left:auto;
+  margin-right:auto;
+
+  margin-top:1em;
+  position:relative;
+  z-index:9;
+}
+.sImgBox{
+  float:left;
+  width:40%;
+  background-color:rgb(40,40,40);
+  text-align:center;
+  height:100%;
+
+  color:white;
+}
+.sImgBox h2{
+  margin-top:30%;
+  font-size:2.5em;
+}
+
+.sWriteupBox{
+  width:60%;
+  float:left;
+
+  padding:16px;
+  text-align:left;
+  height:100%;
+
+  overflow-y: scroll;
+}
+
+span.closer{
+  display:block;
+  float:right;
+  padding:16px;
+  clear:both;
+  cursor:pointer;
+}
+
+
+
+
+#scene4{
+  background-color:#b7ffc1;
+  background-image: url('../images/clouds.png');
+  background-position: top left;
+  /*background-repeat:repeat-x;*/
+  background-size:40% auto;
+  text-align:center;  
+}
+
+.biblio{
+  float:left;
+  width:60%;
+
+}
+.book{
+  overflow-y: hidden;
+}
+.book .pic{
+  width:300px;
+  float:left;
+}
+.book .pic img{
+  width:100%;
+  height:auto;
+}
+.book .bookWriteup{
+  width:calc(100% - 300px);
+  padding-left:32px;
+  padding-right:32px;
+  text-align:left;
+  float:left;
+}
+.book .bookWriteup h3{
+  text-align:left;
+}
+
+.bookSection{
+  clear:both;
+  margin-top:5em;
+}
+.bookSection:first-child{
+  margin-top:0;
+}
+.bookSection h2{
+  text-align:left;
+}
+
+.bookWriteup button{
+  padding:15px;
+  padding-left:25px;
+  padding-right:25px;
+
+  background-color:#ff8a16;
+  border:none;
+  border-radius:3px;
+  color:black;
+  cursor:pointer;
+}
+.bookWriteup button:hover{
+  background-color:#ff7e00;
+}
+.bookWriteup button:active{
+  background-color:#ff8e21;
+}
+
+span.red{color:red;}
+span.tomato{color:tomato;}
+span.orange{color:#ff8a16;}
+span.green{color:green;}
+span.purple{color:purple;}
+span.teal{color:teal;}
+span.yellow{color:yellow;}
+span.navy{color:navy;}
+span.white{color:white;}
+span.black{color:#555;}

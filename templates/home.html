@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF8">
+    <meta charset="utf-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="parampara.com" name="copyright"/>
+    <meta content="Kids learn about hinduism and celebrate their culture" name="description"/>
+    <meta content="kids hinduism, children hinduism, culture" name="keywords"/>
+    <meta content="index,follow" name="robots"/>
+    <meta content="Learning about Hinduism with kits and books and toys, oh my!" name="DC.title"/>
+
+    <title>
+      Parampara Culture Kits
+    </title>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script async type="text/javascript" src="{{ url_for('static', filename='js/home.js') }}"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/home.css')}}" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/hamburger.css')}}" media="screen" />
+  </head>
+
+  <body>
+
+<input type="checkbox" id="navcheck" role="button" title="menu">
+<label id="burgerLabel" for="navcheck" aria-hidden="true" title="menu">
+  <span class="burger">
+    <span class="bar">
+      <span class="visuallyhidden">Menu</span>
+    </span>
+  </span>
+</label>
+<nav id="menu">
+  <h1>
+    <span class="yellow">P</span><span class="navy">A</span><span class="green">R</span><span class="yellow">A</span><span class="purple">M</span><span class="blue">P</span><span class="teal">A</span><span class="yellow">R</span><span class="green">A</span>
+  </h1>
+  <a href="#scene2">About us</a>
+  <a href="#scene3">Our story</a>
+  <a href="#scene4">Culture Kits</a>
+  <a href="#">Order Now</a>
+  <a href="#">Drop us a line</a>
+</nav>
+
+
+
+    <div class="scene" id="scene1">
+      <img class="garland" src="../static/images/thoranam.png"/>
+      <img class="leftImg" src="../static/images/TAMBI.png"/>
+      <img class="rightImg" src="../static/images/PARI.png"/>
+
+      <div class="slideContent">
+        <h1 class="black">WELCOME</h1>
+        <h3 class="black">to</h3>
+        <h1>
+          <span class="red">P</span><span class="navy">A</span><span class="green">R</span><span class="yellow">A</span><span class="purple">M</span><span class="tomato">P</span><span class="teal">A</span><span class="orange">R</span><span class="green">A</span>
+        </h1>
+      </div>
+      <div class="waveForm">
+      </div>
+    </div>
+    <div class="scene" id="scene2">
+      <img class="topleftImg" src="../static/images/hanuman.png"/>
+      <img class="rightImg" src="../static/images/saraswathi.png"/>
+      <h1 class="titleHeader">Our Team</h1>
+      <div class="mainSceneContent">
+        <div class="personBox">
+          <img src='../static/images/woman_profile.png' />
+          <div class="descr">
+            <span class="purple"><strong>Shalini Indrakanti Prasad</strong></span>
+            <span>Writer, Doctor, Outdoor-enthusiast</span>
+          </div>
+          <p>
+             <strong>Shalini</strong> loves books and kids. 
+             The daughter of a special education teacher, Shalini grew up working with children on the autism spectrum in Northern California. 
+             She went to college at UC Berkeley, where she studied bionegineering and started a non-profit organization to spread health awareness amongst children. 
+             She then pursued medicine at Washington University in St. Louis. 
+             She is currently training to be a pediatric radiologist and pursuing neuroradiology research in autism. 
+             Shalini trained in Hindustani and Carnatic vocal music for the majority of her childhood. 
+             In her spare time, she enjoys gardening and pottery.
+          </p>
+        </div>
+        <div class="personBox">
+          <img src='../static/images/woman_profile.png' />
+          <div class="descr">
+            <span class="tomato"><strong>Ananya Arikarevala</strong></span>
+            <span>Artist, Photographer, Lover of books</span>
+          </div>
+          <p>
+            <strong>Ananya</strong> was born and brought up in New Jersey. 
+            She is currently studying Communications Design at Pratt Institute. 
+            During her time at university, Ananya gained extensive training in the digital arts, affording her the opportunity to work for the renowned Vanity Fair and Vogue photographer, Annie Leibowitz. 
+            Exposed to Indian fine arts from a young age, Ananya has learnt and performed Bharthanatyam for over 10 years. 
+            She became involved with Parampara to share her Indian culture and traditions with the younger generation. 
+            When she is not drawing or dancing, she can be found curled up with a great read.
+          </p>
+        </div>
+
+        <div class="personBox">
+          <img src='../static/images/man_profile.png' />
+          <div class="descr">
+            <span class="navy"><strong>Srikar Kasinadhuni</strong></span>
+            <span>Maker, Coder, Popsicle enthusiast</span>
+          </div>
+          <p>
+            <strong>Srikar</strong> is a person who makes things.
+          </p>
+        </div>
+        <div class="personBox">
+          <img src='../static/images/man_profile.png' />
+          <div class="descr">
+            <span class="teal"><strong>Shyam Indrakanti</strong></span>
+            <span>Fixer, Dentist, Lover of gadgets</span>
+          </div>
+          <p>
+            <strong>Shyam</strong> is a person who fixes broken things.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="peoplOverlay">
+        <div class="peopleWrite">
+          <span class='closer'>X</span>
+          <div class="pImgBox"><img src='../static/images/man_profile.png' /></div>
+          <div class="writeupBox">
+            <strong>Srikar</strong> is a person who makes things.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scene" id="scene3">
+      <img class="leftImg" src="../static/images/krishna.png"/>
+      <img class="rightImg" src="../static/images/lakshmi.png"/>
+      <h1 class="titleHeader">Our Story</h1>
+      <div class="storyWrite">
+        <div class="sImgBox">
+          <h2>Launching<br />Parampara</h2>
+        </div>
+        <div class="sWriteupBox">
+          <p>
+            We grew up in America and love our culture. After growing reading Amar Chitra Kathas and Tinkle comics,
+            we always felt the best stories were the ones we heard from our grandparents while laying in bed. 
+          </p>
+          <p>
+            These stories usually started out with "A long long time ago, one day there lived a king...", and we were hooked.
+            The stories that were passed down to us in this way taught us the values and heritage that hold our culture together
+            in a new context and a different time. They also instilled in us timeless values that we aspire to in our daily lives.
+          </p>
+          <p>
+            We started Parampara to making learning about culture fun and engaging for children in a contextually relevant way.
+            We would talk about common shared experiences: like our festivals, food, and common activities. 
+          </p>
+          <p>
+            Shalini chose to bring together beautifully illustrated children's books (courtesy of Ameya's crazy skills)
+            with activity kits that can engage children and help them fall in love with the characters that make up our folklore.
+          </p>
+        </div>
+      </div>
+      <div class="waveForm">
+      </div>
+    </div>
+
+    <div class="scene" id="scene4">
+      <img class="rightImg" src="../static/images/shiva.png"/>
+      <h1 class="titleHeader">Culture Kits</h1>
+      <div class="biblio">
+
+        <div class="bookSection">
+          <h2>Completed Books!</h2>
+          <div class="book">
+            <div class="pic">
+              <img src="../static/images/dasaraCover.png" />
+            </div>
+            <div class="bookWriteup">
+              <h3>Thambi and Pari Celebrate Dasara</h3>
+              <p>Join Thambi and Pari as they learn about how and why Dasara is celebrated all across India!</p>
+              <p>Countdown to the 10th day with a fun coloring book, daily crafts, and a Durga plushy!</p>
+              <p>Light your very own LED deepa in your very own mandap on each of the 9 days to earn some sweet prasadam treats!</p>
+              <button>Order Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="bookSection">
+          <h2>Coming Soon!</h2>
+          <div class="book">
+            <div class="pic">
+              <img src="../static/images/dasaraCover.png" />
+            </div>
+            <div class="bookWriteup">
+              <h3>Thambi and Pari Go to the Temple</h3>
+              <p>Join Thambi and Pari as they go to the temple, play with their friends, and do archana!</p>
+              <p>Expected date: December 25th</p>
+              <button>Pre-Order Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      Parampara Culture Kits &copy; 2018
+    </div>
+  </body>
+</html>
