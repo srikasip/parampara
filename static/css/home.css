@@ -14,7 +14,9 @@ body, html{
   color:#504a61;
   font-family:"Crimson Text", sans-serif;
 }
-
+a{
+  cursor:pointer;
+}
 .header{
   width:100%;
   height:calc(2em + 32px);
@@ -36,7 +38,7 @@ body, html{
 }
 #scene1{
   /*background-color:#86d1fe;*/
-  background-color:#c1e8ff;
+  background-color:#fffdc3;
   background-image: url('../images/flowers.png');
   background-position: top left;
   /*background-repeat:repeat-x;*/
@@ -239,7 +241,7 @@ h1.titleHeader {
 }
 
 #scene3{
-  background-color:#86fe96;
+  background-color:#76d0ab;
   background-image: url('../images/flowers.png');
   background-position: top left;
   /*background-repeat:repeat-x;*/
@@ -297,7 +299,7 @@ span.closer{
 
 
 #scene4{
-  background-color:#b7ffc1;
+  background-color:#febd86;
   background-image: url('../images/clouds.png');
   background-position: top left;
   /*background-repeat:repeat-x;*/
@@ -359,6 +361,10 @@ span.closer{
 }
 .bookWriteup button:active{
   background-color:#ff8e21;
+}
+
+.bookImg{
+  cursor:pointer;
 }
 
 span.red{color:red;}

@@ -1,7 +1,17 @@
 $(document).ready(function(){
   SmoothScrollLinks();
   setTeamActions();
+  setHeaderBullshit();
 });
+
+function setHeaderBullshit(){
+  $(".scene").click(function(){
+    if($("#navcheck").prop("checked")){
+      $("#navcheck").prop("checked", false);
+    }
+  });
+}
+
 
 function setTeamActions(){
   $('.personBox').click(function(){
@@ -37,5 +47,7 @@ function SmoothScrollLinks()
             scrollTop: target.offset().top
         }, 1000);
     }
+
+    $("#navcheck").prop("checked", false);
   });
 }
